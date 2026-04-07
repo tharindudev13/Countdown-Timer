@@ -58,16 +58,16 @@ const TimerInput = () => {
 
                 {/* Timer Display */}
                 {isFinished ? (
-                    <div className="text-center animate-bounce">
-                        <h2 className="text-4xl font-extrabold text-emerald-400">Time is up! 🎊</h2>
-                    </div>
+                <div className="text-center animate-bounce">
+                    <h2 className="text-4xl font-extrabold text-emerald-400">Time is up! 🎊</h2>
+                </div>
                 ) : (
-                    <div className="grid grid-cols-4 gap-4 text-center">
-                        <TimeUnit label="Days" value={timeLeft.days} />
-                        <TimeUnit label="Hours" value={timeLeft.hours} />
-                        <TimeUnit label="Mins" value={timeLeft.minutes} />
-                        <TimeUnit label="Secs" value={timeLeft.seconds} />
-                    </div>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+                    <TimeUnit label="Days" value={timeLeft.days} />
+                    <TimeUnit label="Hours" value={timeLeft.hours} />
+                    <TimeUnit label="Mins" value={timeLeft.minutes} />
+                    <TimeUnit label="Secs" value={timeLeft.seconds} />
+                </div>
                 )}
             </div>
         </div>
